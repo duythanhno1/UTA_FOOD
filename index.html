@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <title>UTAFood</title>
+  </head>
+
+  <body>
+    <header class="header-bg">
+      <div class="content-container middle">
+        <nav class="pc-nav row space-between align-center pb-80 pt-50">
+          <div>
+            <img
+              src="./image/Header-logo.png"
+              alt="Header-logo"
+              class="w-270 h-98"
+            />
+          </div>
+          <div class="nav-content">
+            <a href="#" class="active fw-600 fs-20 lh-24 pr-80 text-white">Home</a>
+            <a href="#" class="not-active fw-400 fs-20 lh-24 pr-80 text-graybold">About Us</a>
+            <a href="#" class="not-active fw-400 fs-20 lh-24 pr-80 text-graybold">Packages</a>
+            <a href="#" class="not-active fw-400 fs-20 lh-24 pr-80 text-graybold">Review</a>
+            <button
+              class="btn og-bg br-43 w-165 h-57 cursor-pointer"
+            >
+            <a href="#" class="font-inter text-white"> Contact us</a>
+            </button>
+          </div>
+        </nav>
+        <nav class="mobile-nav content-container middle overflow-hidden pr pt-50 mb-50">
+          <div class="pr">
+            <a href="#" class="active text-right block"
+              ><img src="./image/mobile-logo.png" alt="menu-logo-mb"
+            /></a>
+            <div id="myNavs" class="top-right w-40vw z-index-9998 full-height white-bg pad-10  text-center pf pt-122">
+              <a href="#" class="active fw-600 fs-20 lh-24 pr-80 og-text mb-30">Home</a>
+              <div class="mb-line mb-30 mt-30"></div>
+              <a href="#" class="not-active fw-400 fs-20 lh-24 pr-80 text-black mb-30">About Us</a>
+              <div class="mb-line mb-30 mt-30"></div>
+              <a href="#" class="not-active fw-400 fs-20 lh-24 pr-80 text-black mb-30">Packages</a>
+              <div class="mb-line mb-30 mt-30"></div>
+              <a href="#" class="not-active fw-400 fs-20 lh-24 pr-80 text-black mb-30">Review</a>
+              <div class="mb-line mb-30 mt-30"></div>
+              <button
+                class="btn og-bg br-43 w-165 h-57 cursor-pointer"
+              >
+              <a href="#" class="font-inter text-white"> Contact us </a>
+                
+              </button>
+            </div>
+            <a href="#" class="pa z-index-9999 icon pa block top-right my-auto" onclick="toggleIcon(); MobileNav();toggleOverflow();togglePageBackground();">
+              <img id="navIcon" src="./image/menu-nav.png" alt="nav-icon" class="right-10 pa z-index-9999" />
+            </a>
+          </div>
+        </nav>
+        <div class="text-center pb-137">
+          <h1 class="fw-700 fs-90 lh-110 text-white font-playfair pb-56 w-343 mx-auto-mb">
+            People who love to eat are always the best people.
+          </h1>
+          <p class="fw-400 fs-22 lh-32 text-gray pb-56 w-343 mx-auto-mb">
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+            fugit, sed quia consequuntur magni aspernatur aut odit aut fugit,
+            sed quia consequuntur magni dolores...
+          </p>
+          <button class="btn og-bg br-43 w-165 h-57 cursor-pointer">
+            <a href="#" class="font-inter text-white">Explore our Menu </a>
+            
+          </button>
+        </div>
+        <div class="fruit-deco container middle">
+          <div class="dish owl-dish-width">
+            <div class="owl-carousel" id="3-dishes">
+              <div class="item">
+                <img src="./image/Ziti-plate.png" class="mx-auto my-auto" alt="Ziti-plate" />
+              </div>
+              <div class="item">
+                <img src="./image/carbonara.png" class="mx-auto my-auto"  alt="carbonara" />
+              </div>
+              <div class="item">
+                <img src="./image/tortellini.png" class="mx-auto my-auto" alt="tortellini" />
+              </div>
+            </div>
+          </div>
+          <div class="row space-between">
+            <div><img src="./image/tomatoes.png" alt="tomatoes" /></div>
+            <div><img src="./image/egg.png" alt="egg" /></div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+    <main class="container middle">
+      <div class="menu container middle br-0-0-0-200 gray-bg">
+        <div class="row justify-center align-center mb-100 pt-50 flex-col-mobile">
+          <h2 class="fw-600 fs-40 lh-38 mr-100">Our foods menus</h2>
+          <p class="max-w-673 fw-400 fs-18 lh-28">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore
+          </p>
+        </div>
+
+        <div class="owl-carousel owl-theme" id="menu-slider">
+          <div
+            class="item w-364 h-432 white-bg menu-box-shadow br-80 row flex-col flex-start"
+          >
+            <img
+              src="./image/chicken-fried.png"
+              alt="chicken-fried"
+              class="h-250 pb-38"
+            />
+            <h2 class="font-playfair fw-600 fs-30 lh-40 mx-auto pb-38">
+              Barbecue Chicken Fried
+            </h2>
+            <div class="row space-between align-center mx-auto w-270">
+              <p class="mr-86 fs-20 fw-600">$4.75</p>
+              <button
+                class="btn btn-order og-bg br-43 w-123 h-39 cursor-pointer"
+              >
+              <a href="#" class="font-inter text-white">Order Now</a>
+                
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="item w-364 h-432 white-bg menu-box-shadow br-80 row flex-col flex-start"
+          >
+            <img
+              src="./image/chicken-roast.png"
+              alt="chicken-roast"
+              class="h-250 pb-38"
+            />
+            <h2 class="font-playfair fw-600 fs-30 lh-40 mx-auto pb-38">
+              Chicken roast cecipe
+            </h2>
+            <div class="row space-between align-center mx-auto w-270">
+              <p class="mr-86 fs-20 fw-600">$6.30</p>
+              <button
+                class="btn btn-order og-bg br-43 w-123 h-39 cursor-pointer"
+              >
+              <a href="#" class="font-inter text-white">Order Now</a>
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="item w-364 h-432 white-bg menu-box-shadow br-80 row flex-col flex-start"
+          >
+            <img src="./image/Pasta.png" alt="pasta" class="h-250 pb-38" />
+            <h2 class="font-playfair fw-600 fs-30 lh-40 mx-auto pb-38">
+              Great Pasta
+            </h2>
+            <div class="row space-between align-center mx-auto w-270">
+              <p class="mr-86 fs-20 fw-600">$6.55</p>
+              <button
+                class="btn btn-order og-bg br-43 w-123 h-39 cursor-pointer"
+              >
+              <a href="#" class="font-inter text-white">Order Now</a>
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="item w-364 h-432 white-bg menu-box-shadow br-80 row flex-col flex-start"
+          >
+            <img
+              src="./image/skinless-chicken-salad.png"
+              alt="chicken-salad"
+              class="h-250 pb-38"
+            />
+            <h2 class="font-playfair fw-600 fs-30 lh-40 mx-auto pb-38">
+              Barbecue Chicken Fried
+            </h2>
+            <div class="row space-between align-center mx-auto w-270">
+              <p class="mr-86 fs-20 fw-600">$4.75</p>
+              <button
+                class="btn btn-order og-bg br-43 w-123 h-39 cursor-pointer"
+              >
+              <a href="#" class="font-inter text-white">Order Now</a>
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="item w-364 h-432 white-bg menu-box-shadow br-80 row flex-col flex-start"
+          >
+            <img
+              src="./image/mutton-biryani.png"
+              alt="mutton-biryani"
+              class="h-250 pb-38"
+            />
+            <h2 class="font-playfair fw-600 fs-30 lh-40 mx-auto pb-38">
+              Mutton biryani recipe
+            </h2>
+            <div class="row space-between align-center mx-auto w-270">
+              <p class="mr-86 fs-20 fw-600">$8.00</p>
+              <button
+                class="btn btn-order og-bg br-43 w-123 h-39 cursor-pointer"
+              >
+              <a href="#" class="font-inter text-white">Order Now</a>
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="item w-364 h-432 white-bg menu-box-shadow br-80 row flex-col flex-start"
+          >
+            <img
+              src="./image/vegetables-pizza.png"
+              alt="vegetables-pizza"
+              class="h-250 pb-38"
+            />
+            <h2 class="font-playfair fw-600 fs-30 lh-40 mx-auto pb-38">
+              Vegetable Pizza
+            </h2>
+            <div class="row space-between align-center mx-auto w-270">
+              <p class="mr-86 fs-20 fw-600">$4.75</p>
+              <button
+                class="btn btn-order og-bg br-43 w-123 h-39 cursor-pointer"
+              >
+              <a href="#" class="font-inter text-white">Order Now</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pizza container middle">
+        <div class="row mb-90 meat-bg flex-col-mobile">
+          <div class="col-6">
+            <img
+              id="spin"
+              src="./image/pizza.png"
+              alt="pizza-bg"
+              class="pizza-img pt-108 float-right mt--40 mr-40"
+            />
+          </div>
+          <div class="col-6 grid pr-35 pl-35">
+            <h2 class="font-playfair fw-600 fs-40 lh-60 max-w-664 pt-249">
+              Part of the secret of success is to eat what you like and let the
+              food fight it out inside.
+            </h2>
+            <p class="font-inter fw-400 fs max-w-715 fs-16 lh-26 pt-50">
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a comple I
+              must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was bmplete account of the system....
+            </p>
+            <div class="row space-between align-center">
+              <button class="btn  w-170 h-57 br-43 og-bg">
+                <a href="#" class="font-inter text-white">Learn More</a>
+              </button>
+              <img src="./image/fruit.png" alt="fruit-img" class="fruit-img" class="w-331 h-206" />
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc-layout food container middle br-0-200-0-0 gray-bg">
+        <h2 class="food-heading font-playfair fw-600 fs-40 lh-53 text-center pt-122 pb-30">
+          Food of the Month
+        </h2>
+        <p
+          class="food-content font-inter fw-400 fs-18 lh-28 text-graybold text-center max-w-897 mx-auto pb-90"
+        >
+          But I must explain to you how all this mistaken idea of denouncing
+          pleasure and praising pain was born and I will give you a complete
+          account of the system
+        </p>
+        <div class="food-detail row justify-center">
+          <div class="col-1"></div>
+          <div class="col-3 row flex-col space-between food-box-shadow br-40 white-bg">
+            <img
+              src="./image/caesars.png"
+              alt="caesars"
+              class="full-width h-auto pb-30"
+            />
+            <div>
+              <h2 class="font-playfair fw-500 fs-24 lh-32 pb-20 pl-40">
+                Little Caesars Crazy Bread
+              </h2>
+              <p class="font-inter fw-400 fs-16 lh-26 pl-40 pr-28">
+                But I must explain to you how all this mistaken idea of will
+                give you a complete account of the system
+              </p>
+              <div class="food-order row space-between  mt-35 mb-50 px-45 align-end">
+                <p class="mr-86 fs-20 fw-600 my-auto">$6.30</p>
+                <button
+                  class="btn btn-order og-bg br-43 w-123 h-39 cursor-pointer"
+                >
+                <a href="#" class="font-inter text-white">Order Now</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-05"></div>
+          <div class="col-3 row flex-col space-between food-box-shadow br-40 white-bg">
+            <img
+              src="./image/fish-meal.png"
+              alt="fish-meal"
+              class="full-width h-auto pb-30"
+            />
+            <div>
+              <h2 class="font-playfair fw-500 fs-24 lh-32 pb-20 pl-40">
+                Two-Piece Fish Meal
+              </h2>
+              <p class="font-inter fw-400 fs-16 lh-26 pl-40 pr-28">
+                But I must explain to you how all this mistaken idea of will
+                give you a complete account of the system
+              </p>
+              <div class="food-order row space-between  mt-35 mb-50 px-45 align-end">
+                <p class="mr-86 fs-20 fw-600 my-auto">$6.30</p>
+                <button
+                  class="btn btn-order og-bg br-43 w-123 h-39 cursor-pointer"
+                >
+                <a href="#" class="font-inter text-white">Order Now</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-05"></div>
+          <div class="col-3 row flex-col space-between food-box-shadow br-40 white-bg">
+            <img
+              src="./image/dunkin-munchkins.png"
+              alt="dunkin-munchkins"
+              class="full-width h-auto pb-30"
+            />
+            <div>
+              <h2 class="font-playfair fw-500 fs-24 lh-32 pb-20 pl-40">
+                Dunkin' Munchkins
+              </h2>
+              <p class="font-inter fw-400 fs-16 lh-26 pl-40 pr-28">
+                But I must explain to you how all this mistaken idea of will
+                give you a complete account of the system
+              </p>
+              <div class="food-order row space-between  mt-35 mb-50 px-45 align-end">
+                <p class="mr-86 fs-20 fw-600 my-auto">$6.30</p>
+                <button
+                  class="btn btn-order og-bg br-43 w-123 h-39 cursor-pointer"
+                >
+                <a href="#" class="font-inter text-white">Order Now</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-1"></div>
+        </div>
+        <div class="text-center mt-86">
+          <button class="btn w-234 h-57 og-bg br-43 mb-120">
+            <a href="#" class="font-inter text-white">Explore our Menu</a>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-layout food container middle br-0-200-0-0 gray-bg">
+        <h2 class="food-heading font-playfair fw-600 fs-40 lh-53 text-center pt-122 pb-30">
+          Food of the Month
+        </h2>
+        <p
+          class="food-content font-inter fw-400 fs-18 lh-28 text-graybold text-center max-w-897 mx-auto pb-90"
+        >
+          But I must explain to you how all this mistaken idea of denouncing
+          pleasure and praising pain was born and I will give you a complete
+          account of the system
+        </p>
+        <div class="owl-carousel owl-theme food-detail" id="food-slider">
+          <div class="item row flex-col space-between food-box-shadow br-40 white-bg">
+            <img
+              src="./image/caesars.png"
+              alt="caesars"
+              class="full-width h-auto pb-30 mx-auto"
+            />
+            <div>
+              <h2 class="font-playfair fw-500 fs-24 lh-32 pb-20 pl-40">
+                Little Caesars Crazy Bread
+              </h2>
+              <p class="font-inter fw-400 fs-16 lh-26 pl-40 pr-28">
+                But I must explain to you how all this mistaken idea of will
+                give you a complete account of the system
+              </p>
+              <div class="food-order row space-between  mt-35 mb-50 px-45 align-end">
+                <p class="mr-86 fs-20 fw-600 my-auto">$6.30</p>
+                <button
+                  class="btn btn-order og-bg br-43 w-123 h-39 cursor-pointer"
+                >
+                <a href="#" class="font-inter text-white">Order Now</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="item row flex-col space-between food-box-shadow br-40 white-bg">
+            <img
+              src="./image/fish-meal.png"
+              alt="fish-meal"
+              class="full-width h-auto pb-30 mx-auto"
+            />
+            <div>
+              <h2 class="font-playfair fw-500 fs-24 lh-32 pb-20 pl-40">
+                Two-Piece Fish Meal
+              </h2>
+              <p class="font-inter fw-400 fs-16 lh-26 pl-40 pr-28">
+                But I must explain to you how all this mistaken idea of will
+                give you a complete account of the system
+              </p>
+              <div class="food-order row space-between  mt-35 mb-50 px-45 align-end">
+                <p class="mr-86 fs-20 fw-600 my-auto">$6.30</p>
+                <button
+                  class="btn btn-order og-bg br-43 w-123 h-39 cursor-pointer"
+                >
+                <a href="#" class="font-inter text-white">Order Now</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="item row flex-col space-between food-box-shadow br-40 white-bg">
+            <img
+              src="./image/dunkin-munchkins.png"
+              alt="dunkin-munchkins"
+              class="full-width h-auto pb-30 mx-auto"
+            />
+            <div>
+              <h2 class="font-playfair fw-500 fs-24 lh-32 pb-20 pl-40">
+                Dunkin' Munchkins
+              </h2>
+              <p class="font-inter fw-400 fs-16 lh-26 pl-40 pr-28">
+                But I must explain to you how all this mistaken idea of will
+                give you a complete account of the system
+              </p>
+              <div class="food-order row space-between  mt-35 mb-50 px-45 align-end">
+                <p class="mr-86 fs-20 fw-600 my-auto">$6.30</p>
+                <button
+                  class="btn btn-order og-bg br-43 w-123 h-39 cursor-pointer"
+                >
+                <a href="#" class="font-inter text-white">Order Now</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-86">
+          <button class="btn w-234 h-57 og-bg br-43 mb-120">
+            <a href="#" class="font-inter text-white">Explore our Menu</a>
+            
+          </button>
+        </div>
+      </div>
+      
+      <div class="customer-say content-container middle text-center customer-deco mt-116 mb-120">
+        <h2 class="font-playfair fw-600 fs-40 lh-56 mb-90">
+          What our popular customers are saying
+        </h2>
+        <div class="owl-carousel owl-theme" id="customer-slider">
+          <div class="item">
+            <div class="grid flex-center-mb">
+              <div class="row mx-auto align-center pb-50 flex-col-mobile">
+                <img
+                  src="./image/Serhiy-Hipsky.png"
+                  alt="Serhiy-Hipsky"
+                  class="avatar mr-40 mx-auto-mb mb-40"
+                />
+                <div class="row flex-col flex-start">
+                  <h3 class="font-playfair fw-600 fs-22 lh-22 pb-14 mx-auto-mb">
+                    Serhiy Hipsky
+                  </h3>
+                  <p class="font-inter fw-500 fs-14 lh-18 text-graybold mx-auto-mb">
+                    CEO Universal
+                  </p>
+                </div>
+              </div>
+
+              <p class="font-inter fw-400 fs-18 lh-30 text-center mx-auto text-graybold pb-50 max-w-1316">
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will give
+                you a complete account of the 
+                system idea of denouncing pleasure ...But I must explain to you
+                how all this mistaken idea of denouncing pleasure and praising
+                pain was born and I will 
+                give you a complete account of the system idea of denouncing
+                pleasure ...
+              </p>
+              <div class="customer-rating mx-auto pb-30">
+                <img src="./image/five-star.png" alt="5-star" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="grid flex-center-mb">
+              <div class="row mx-auto align-center pb-50 flex-col-mobile">
+                <img
+                  src="./image/man-with-glass.png"
+                  alt="Serhiy-Hipsky"
+                  class="avatar mr-40 mx-auto-mb mb-40"
+                />
+                <div class="row flex-col flex-start">
+                  <h3 class="font-playfair fw-600 fs-22 lh-22 pb-14 mx-auto-mb">
+                    Serhiy Hipsky
+                  </h3>
+                  <p class="font-inter fw-500 fs-14 lh-18 text-graybold mx-auto-mb">
+                    CEO Universal
+                  </p>
+                </div>
+              </div>
+
+              <p class="font-inter fw-400 fs-18 lh-30 mx-auto text-graybold pb-50 max-w-1316">
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will give
+                you a complete account of the 
+                system idea of denouncing pleasure ...But I must explain to you
+                how all this mistaken idea of denouncing pleasure and praising
+                pain was born and I will 
+                give you a complete account of the system idea of denouncing
+                pleasure ...
+              </p>
+              <div class="customer-rating mx-auto pb-30">
+                <img src="./image/four-star.png" alt="4-star" />
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="grid flex-center-mb">
+              <div class="row mx-auto align-center pb-50 flex-col-mobile">
+                <img
+                  src="./image/man-with-vest.png"
+                  alt="Serhiy-Hipsky"
+                  class="avatar mr-40 mx-auto-mb mb-40"
+                />
+                <div class="row flex-col flex-start">
+                  <h3 class="font-playfair fw-600 fs-22 lh-22 pb-14 mx-auto-mb">
+                    Serhiy Hipsky
+                  </h3>
+                  <p class="font-inter fw-500 fs-14 lh-18 text-graybold mx-auto-mb">
+                    CEO Universal
+                  </p>
+                </div>
+              </div>
+
+              <p class="font-inter fw-400 fs-18 lh-30 mx-auto text-graybold pb-50 max-w-1316">
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will give
+                you a complete account of the 
+                system idea of denouncing pleasure ...But I must explain to you
+                how all this mistaken idea of denouncing pleasure and praising
+                pain was born and I will
+                give you a complete account of the system idea of denouncing
+                pleasure ...
+              </p>
+              <div class="customer-rating mx-auto pb-30">
+                <img src="./image/four-star.png" alt="4-star" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="gray-bg">
+      <div class="container middle">
+        <div class="row space-around pb-90 flex-col-mobile">
+          <div class="grid pt-97">
+            <img
+              src="./image/Footer-logo.png"
+              alt="Footer-logo"
+              class="footer-logo pb-38"
+            />
+            <p class="w-566 font-inter fw-400 fs-18 lh-30 text-graybold pb-38">
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a complete
+              account of the system idea of denouncing pleasure ...
+            </p>
+            <div class="row">
+              <img
+                src="./image/facebook-icon.png"
+                alt="facebook-icon"
+                class="pr-30"
+              />
+              <img
+                src="./image/twitter-icon.png"
+                alt="twitter-icon"
+                class="pr-30"
+              />
+              <img src="./image/instagram-icon.png" alt="instagram-icon" />
+            </div>
+          </div>
+          <div class="line h-262 mt-86"></div>
+          <div class="grid">
+            <div class="row space-between pt-97">
+              <div>
+                <h2
+                  class="font-playfair fw-600 fs-30 lh-40 none-linebreak pb-38"
+                >
+                  Quick links
+                </h2>
+                <div class="grid font-inter fw-400 fs-18 lh-40">
+                  <a href="#" class="text-graybold">Home</a>
+                  <a href="#" class="text-graybold">Packages</a>
+                  <a href="#" class="text-graybold">Review</a>
+                  <a href="#" class="text-graybold">About Us</a>
+                  <a href="#" class="text-graybold">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="line h-262 mt-86"></div>
+          <div class="contact-us pt-97">
+            <h2 class="font-playfair fw-600 fs-30 lh-40 none-linebreak mb-35">
+              Contact Us
+            </h2>
+            <div class="grid">
+              <div class="row align-center mb-15">
+                <div
+                  class="img-wrapper og-bg br-50pc w-32 h-32 inline-flex align-center justify-center mr-30"
+                >
+                  <img src="./image/phone-icon.png" alt="phone-icon" />
+                </div>
+                <p class="font-inter fw-400 fs-18 lh-18 text-graybold">
+                  (+84)(0) 918 242 768
+                </p>
+              </div>
+              <div class="row align-center mb-15">
+                <div
+                  class="img-wrapper og-bg br-50pc w-32 h-32 inline-flex align-center justify-center mr-30"
+                >
+                  <img src="./image/email-icon.png" alt="phone-icon" />
+                </div>
+                <p class="font-inter fw-400 fs-18 lh-18 text-graybold">
+                  business@utafood.com
+                </p>
+              </div>
+              <div class="row align-center">
+                <div
+                  class="img-wrapper og-bg br-50pc w-32 h-32 inline-flex align-center justify-center mr-30"
+                >
+                  <img src="./image/location-icon.png" alt="location-icon" />
+                </div>
+                <p class="font-inter fw-400 fs-18 lh-18 text-graybold max-w-265">
+                  122-124, B2 Street, An Loi Dong Ward, Thu Duc City, Ho Chi Minh,
+                  Vietnam
+                </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="longline"></div>
+        <p
+          class="font-inter fw-400 fs-18 lh-22 text-center py-40 text-graybold"
+        >
+          © CopyRight 2023 UTA DEV TEAM
+        </p>
+      </div>
+    </footer>
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
